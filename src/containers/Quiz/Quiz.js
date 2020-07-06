@@ -93,6 +93,11 @@ class Quiz extends Component {
         })
     };
 
+    componentDidMount() {
+        console.log('Quiz ID = ', this.props.match.params.id);
+    }
+
+    /*Возвращаем значение*/
     render() {
         return (
             <div className={classes.Quiz}>
